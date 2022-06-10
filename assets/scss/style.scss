@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'genty';
+    src: url('../fonts/genty/genty-regular.woff2') format('woff2'),
+         url('../fonts/genty/genty-regular.woff') format('woff'),
+         url('../fonts/genty/genty-regular.ttf') format('ttf'),
+         url('../fonts/genty/genty-regular.svg') format('svg');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,700i,800,900i&display=swap');
+
+$red: #D73930;
+$orange: #DB6E29;
+$yellow: #EFAD1D;
+$tan: #EDD2A7;
+$teal: #249B9D;
+$blue: #00596F;
+$black: #2A2B2A;
+
+@import '_screen.scss';
+@import '_scooch.scss';
+@import '_opacc.scss';

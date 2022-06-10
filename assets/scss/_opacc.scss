@@ -1,0 +1,216 @@
+#opacc {
+	.peace {
+		width: 300px;
+		height: 300px;
+		position: fixed;
+		top: 300px;
+		right: 100px;
+		z-index: 1;
+		opacity: 0.2;
+	}
+	a {
+		text-decoration: none;
+		width: 400px;
+		vertical-align: top;
+		display: inline-block;
+		background: white;
+		color: black;
+		height: 60px;
+		line-height: 60px;
+		margin: 15px 0 0;
+		box-sizing: border-box;
+		padding: 0 25px;
+		transition: all 0.2s ease-in-out;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		font-weight: normal;
+		span {
+			color: #ED1C24;
+			font-weight: bold;
+		}
+	}
+	p {
+		color: #BFBFBF;
+		line-height: 30px;
+	}
+	.copy {
+		width: 50%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+		justify-content: center;
+		float: right;
+		box-sizing: border-box;
+		padding-right: 150px;
+	}
+	#intro {
+		color: white;
+		background: black;
+		min-height: 100vh;
+		height: 100%;
+		background: url('../img/opacc/mic.png') no-repeat scroll #000000;
+		background-position: 20% 100%;
+		background-size: 275px;
+		h1 {
+			font-size: 3em;
+			margin: 0;
+		}
+	}
+	#vid {
+		position: relative;
+		z-index: 2;
+		padding: 100px 0;
+		background: url('../img/opacc/video_bg.jpg') no-repeat scroll center / cover #ED1C24;
+		video {
+			width: 800px;
+			height: auto;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+	#action {
+		min-height: 100vh;
+		height: 100%;
+		background: url('../img/opacc/ap_footer.jpg') no-repeat scroll center / cover #100102;
+		background-position: -300px 100%;
+		h3 {
+			color: white;
+			font-size: 24pt;
+			margin: 0;
+		}
+	}
+}
+@media(max-width: 1920px) and (min-height: 1023px) {
+	#opacc {
+		a {
+			font-size: 1.3em;
+			width: auto;
+			text-align: center;
+			height: 80px;
+			line-height: 80px;
+		}
+		p {
+			font-size: 1.6em;
+			line-height: 40px;
+		}
+		#intro {
+			background-size: 375px;
+			h1 {
+				font-size: 5em;
+			}
+		}
+		#vid {
+			video {
+				width: 1024px;
+			}
+		}
+		#action {
+			background-position: -400px 100%;
+			h3 {
+				font-size: 3em;
+			}
+		}
+	}
+}
+@media(max-width: 1366px) and (min-height: 1023px) {
+	#opacc {
+		p {
+			font-size: 1.2em;
+			line-height: 30px;
+		}
+		#intro {
+			h1 {
+				font-size: 4em;
+			}
+		}
+		#action {
+			background-position: -600px 100%;
+			h3 {
+				font-size: 2em;
+			}
+		}
+	}
+}
+@media(max-width: 1024px) and (min-height: 768px) {
+	#opacc {
+		p {
+			font-size: 1em;
+			line-height: 24px;
+		}
+		#intro {
+			h1 {
+				font-size: 2.5em;
+			}
+		}
+		#action {
+			background-position: -450px 100%;
+			h3 {
+				font-size: 1.5em;
+			}
+		}
+	}
+}
+@media(max-width: 414px) {
+	#opacc {
+		.peace {
+			display: none;
+		}
+		a {
+			box-sizing: border-box;
+			width: auto;
+			font-size: 0.9em;
+			text-align: center;
+		}
+		p {
+			font-size: 1em;
+			line-height: 24px;
+		}
+		.copy {
+			width: 100%;
+			padding: 25px;
+			display: block;
+		}
+		#intro {
+			height: auto;
+			padding-bottom: 250px;
+			background-position: 50% 100%;
+			background-size: 125px;
+			h1 {
+				font-size: 2.5em;
+			}
+		}
+		#vid {
+			padding: 50px 0;
+			video {
+				width: 80%;
+			}
+		}
+		#action {
+			min-height: auto;
+			height: 100%;
+			background-position: 50% 100%;
+			background-size: 414px;
+			padding-bottom: 150px;
+		}
+	}
+}
+@media(max-width: 375px) {
+	#opacc {
+		a {
+			padding: 0 10px;
+		}
+		#intro {
+			background-size: 125px;
+			padding-bottom: 200px;
+			h1 {
+				font-size: 2em;
+			}
+		}
+		#action {
+			h3 {
+				font-size: 1.5em;
+			}
+		}
+	}
+}
