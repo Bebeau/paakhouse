@@ -37,12 +37,11 @@
 		transition: all 1s ease-in-out;
 	}
 }
-
 html,
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Montserrat", sans-serif;
+	font-family: "montserrat-regular", sans-serif;
 	height: 100%;
 	&.freeze {
 		overflow: hidden;
@@ -56,7 +55,7 @@ body {
 	}
 }
 h1,h2,h3,h4,h5,h6 {
-	font-family: 'genty', sans-serif;
+	font-family: 'pomelo', sans-serif;
 	font-weight: normal;
 }
 h2 {
@@ -209,7 +208,7 @@ header {
 			text-transform: capitalize;
 			color: $blue;
 			line-height: 40px;
-			font-family: "Montserrat";
+			font-family: "montserrat-regular";
 			letter-spacing: 1px;
 			transition: all 0.2s ease-in-out;
 			width: auto;
@@ -261,6 +260,17 @@ header {
 	overflow: hidden;
 	display: flex;
 	margin: 0 0 -215px;
+	position: relative;
+	&:after {
+		content: '';
+		background: url('../img/2023/striped-bg.jpg') no-repeat scroll center / cover;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+	}
 	&.in {
 		.arrow {
 			bottom: 15px;
@@ -304,10 +314,11 @@ header {
 	}
 	#splashCopy {
 		width: 100%;
-		background: $black;
 		color: $tan;
 		overflow: hidden;
 		text-align: center;
+		position: relative;
+		z-index: 2;
 		.tagline {
 			text-transform: uppercase;
 			font-size: 0.7rem;
@@ -325,7 +336,7 @@ header {
 		#logo {
 			position: absolute;
 			z-index: 4;
-			top: 120px;
+			top: 30px;
 			left: 0;
 			right: 0;
 			img {
@@ -430,12 +441,16 @@ header {
 #videos {
 	text-align: center;
 	color: $tan;
-	background: $black;
+	background: $orange;
 	background-size: 80%;
 	background-position: 50% 50%;
 	padding: 40px 20px;
+	position: relative;
+	z-index: 5;
 	h3 {
+		color: $black;
 		margin-top: 0;
+		margin-bottom: 20px;
 		display: block;
 		text-transform: capitalize;
 	}
@@ -465,10 +480,12 @@ header {
 	}
 }
 #cta {
-	background: $tan;
+	background: $teal;
 	color: $black;
 	padding: 40px;
 	text-align: center;
+	position: relative;
+	z-index: 5;
 	h3 {
 		margin-top: 0;
 	}
@@ -481,7 +498,7 @@ header {
 		font-size: 12pt;
 		border: none;
 		background: $black;
-		color: $tan;
+		color: white;
 		text-decoration: none;
 		line-height: 60px;
 		height: 60px;
@@ -504,7 +521,6 @@ header {
 		}
 		&:hover {
 			background: $black;
-			color: $tan;
 			transition: all 0.2s ease-in-out;
 		}
 	}
@@ -528,7 +544,7 @@ header {
 			padding: 0 15px;
 			margin: 0;
 			vertical-align: bottom;
-			font-family: "Montserrat";
+			font-family: "montserrat-regular";
 			font-weight: 500;
 			border-radius: 0;
 			&:focus {
@@ -536,7 +552,7 @@ header {
 			}
 			&::placeholder {
 				color: $black;
-				font-family: "Montserrat";
+				font-family: "montserrat-regular";
 			}
 		}
 		button {
@@ -546,16 +562,15 @@ header {
 			line-height: 50px;
 			box-sizing: border-box;
 			padding: 0 15px;
-			color: $tan;
+			color: white;
 			background: $black;
 			background-position: 50% 50%;
 			transition: all 0.3s $authenticMotion;
-			font-family: "Montserrat";
+			font-family: "montserrat-regular";
 			letter-spacing: 1px;
 			&:hover {
 				cursor: pointer;
 				background: $black;
-				color: $tan;
 				transition: all 0.2s ease-in-out;
 			}
 			&.success {
@@ -620,8 +635,10 @@ footer {
 	padding: 50px 0;
 	line-height: 18px;
 	background: $black;
-	color: $tan;
+	color: rgba(255,255,255,0.5);
 	overflow: hidden;
+	position: relative;
+	z-index: 5;
 	.legal,
 	.signature {
 		padding: 0 20px;
@@ -638,7 +655,7 @@ footer {
 			}
 		}
 		.policy {
-			color: white;
+			color: rgba(255,255,255,0.8);
 			text-decoration: none;
 			transition: all 0.3s ease-in-out;
 			&:hover {
@@ -658,13 +675,13 @@ footer {
 		}
 		a {
 			text-decoration: none;
-			color: currentColor;
+			color: rgba(255,255,255,0.8);
 			display: inline-block;
 			font-weight: bold;
 			transition: all 0.3s ease-in-out;
 			&:hover {
 				cursor: pointer;
-				color: $tan;
+				color: white;
 				transition: all 0.3s ease-in-out;
 			}
 		}
@@ -706,7 +723,7 @@ footer {
 		margin: 0 0 -315px;
 		#splashCopy {
 			#logo {
-				top: 100px;
+				top: 40px;
 				img {
 					max-width: 300px;
 					display: block;
@@ -847,7 +864,6 @@ footer {
 		.m-scooch-videos {
 			.m-scooch-inner {
 				h3 {
-					margin: 0;
 					font-size: 2rem;
 				}
 			}
@@ -896,6 +912,13 @@ footer {
 	}
 }
 @media (min-width: 853px) {
+	#splash {
+		#splashCopy {
+			#stage {
+				top: 40px;
+			}
+		}
+	}
 	#videos {	
 		iframe,
 		video {
