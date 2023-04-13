@@ -380,7 +380,7 @@ header {
 	width: 300px;
 	height: auto;
 	position: fixed;
-	bottom: 320px;
+	bottom: 60px;
 	left: 50%;
 	transform: translate(-50%,0);
 	z-index: 6;
@@ -922,9 +922,6 @@ footer {
 	}
 }
 @media (min-width: 853px) {
-	.comingSoon {
-		bottom: 60px;
-	}
 	#splash {
 		#splashCopy {
 			#stage {
