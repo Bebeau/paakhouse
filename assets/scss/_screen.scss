@@ -357,19 +357,19 @@ header {
 			position: relative;
 			z-index: 2;
 			width: 100%;
-			top: -50px;
+			top: -25px;
 		}
 		#crowd2 {
 			position: relative;
 			z-index: 3;
 			width: 100%;
-			top: -110px;
+			top: -96px;
 		}
 		#crowd1 {
 			position: relative;
 			z-index: 4;
 			width: 100%;
-			top: -215px;
+			top: -210px;
 		}
 	}
 	.button {
@@ -380,7 +380,7 @@ header {
 	width: 300px;
 	height: auto;
 	position: fixed;
-	bottom: 340px;
+	bottom: 320px;
 	left: 50%;
 	transform: translate(-50%,0);
 	z-index: 6;
@@ -845,9 +845,6 @@ footer {
 	h3 {
 		font-size: 2rem;
 	}
-	.comingSoon {
-		bottom: 60px;
-	}
 	#about {
 		section {
 			max-width: 800px;
@@ -925,6 +922,9 @@ footer {
 	}
 }
 @media (min-width: 853px) {
+	.comingSoon {
+		bottom: 60px;
+	}
 	#splash {
 		#splashCopy {
 			#stage {
