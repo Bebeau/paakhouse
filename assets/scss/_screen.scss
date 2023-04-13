@@ -55,8 +55,9 @@ body {
 	}
 }
 h1,h2,h3,h4,h5,h6 {
-	font-family: 'pomelo', sans-serif;
+	font-family: 'montserrat-extrabold', sans-serif;
 	font-weight: normal;
+	text-transform: uppercase;
 }
 h2 {
 	font-size: 2rem;
@@ -295,7 +296,6 @@ header {
 			margin: 0 auto;
 			height: 3px;
 			background: white;
-			vertical-align: bottom;
 			transform: translate(-3px,12px) rotate(50deg);
 		}
 		&:after {
@@ -305,7 +305,6 @@ header {
 			margin: 0 auto;
 			height: 3px;
 			background: white;
-			vertical-align: bottom;
 			transform: translate(3px,10px) rotate(-50deg);
 		}
 		&:hover {
@@ -375,6 +374,18 @@ header {
 	}
 	.button {
 		width: 200px;
+	}
+}
+.comingSoon {
+	width: 300px;
+	height: auto;
+	position: fixed;
+	bottom: 340px;
+	left: 50%;
+	transform: translate(-50%,0);
+	z-index: 6;
+	img {
+		width: 100%;
 	}
 }
 #about {
@@ -452,7 +463,6 @@ header {
 		margin-top: 0;
 		margin-bottom: 20px;
 		display: block;
-		text-transform: capitalize;
 	}
 	.nav-arrow {
 		display: none;
@@ -834,6 +844,9 @@ footer {
 	}
 	h3 {
 		font-size: 2rem;
+	}
+	.comingSoon {
+		bottom: 60px;
 	}
 	#about {
 		section {

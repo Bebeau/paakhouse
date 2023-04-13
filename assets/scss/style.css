@@ -9,7 +9,7 @@
 }
 @font-face {
   font-family: "montserrat-extrabold";
-  src: url("../fonts/Montserrat-ExtraBold.otf") format("otf");
+  src: url("../fonts/montserrat/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/montserrat/Montserrat-ExtraBold.woff") format("woff"), url("../fonts/montserrat/Montserrat-ExtraBold.ttf") format("ttf"), url("../fonts/montserrat/Montserrat-ExtraBold.svg") format("svg");
 }
 @font-face {
   font-family: "pomelo";
@@ -75,8 +75,9 @@ body.freeze {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "pomelo", sans-serif;
+  font-family: "montserrat-extrabold", sans-serif;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -336,7 +337,6 @@ header.in nav {
   margin: 0 auto;
   height: 3px;
   background: white;
-  vertical-align: bottom;
   transform: translate(-3px, 12px) rotate(50deg);
 }
 #splash .arrow:after {
@@ -346,7 +346,6 @@ header.in nav {
   margin: 0 auto;
   height: 3px;
   background: white;
-  vertical-align: bottom;
   transform: translate(3px, 10px) rotate(-50deg);
 }
 #splash .arrow:hover {
@@ -415,6 +414,19 @@ header.in nav {
 }
 #splash .button {
   width: 200px;
+}
+
+.comingSoon {
+  width: 300px;
+  height: auto;
+  position: fixed;
+  bottom: 340px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 6;
+}
+.comingSoon img {
+  width: 100%;
 }
 
 #about {
@@ -494,7 +506,6 @@ header.in nav {
   margin-top: 0;
   margin-bottom: 20px;
   display: block;
-  text-transform: capitalize;
 }
 #videos .nav-arrow {
   display: none;
@@ -837,6 +848,9 @@ footer .signature a:hover {
   }
   h3 {
     font-size: 2rem;
+  }
+  .comingSoon {
+    bottom: 60px;
   }
   #about section {
     max-width: 800px;
