@@ -231,7 +231,7 @@ header.show #socialLinks {
 header nav {
   background: #87e1c0;
   box-sizing: border-box;
-  padding: 25px 75px 25px 25px;
+  padding: 50px 75px 50px 25px;
   transform: translate(0, -300px);
   transition: all 0.5s ease-in-out;
   position: relative;
@@ -652,6 +652,9 @@ header.in nav {
 #sponsors {
   background: #262626;
 }
+#sponsors h3 {
+  color: white;
+}
 #sponsors .wrap {
   display: flex;
   flex-wrap: wrap;
@@ -663,20 +666,22 @@ header.in nav {
 #sponsors .wrap a {
   flex: 0 0 25%;
   box-sizing: border-box;
-  padding: 25px;
+  padding: 15px;
   margin: 0 0 0 -3px;
   opacity: 1;
   transition: all 0.3s ease-in-out;
 }
 #sponsors .wrap a img {
-  max-width: 100%;
-  min-width: 100%;
-  width: 100%;
+  max-width: 80%;
+  width: auto;
 }
 #sponsors .wrap a:hover {
   cursor: pointer;
   opacity: 0.8;
   transition: all 0.3s ease-in-out;
+}
+#sponsors .wrap #tacoBell img {
+  width: 50%;
 }
 
 footer {
@@ -902,8 +907,14 @@ footer .signature a:hover {
     padding-bottom: 40px;
   }
   #sponsors .wrap a {
-    flex: 0 0 10%;
-    padding: 20px;
+    flex: 0 0 20%;
+    padding: 50px 20px;
+  }
+  #sponsors .wrap a img {
+    width: 50%;
+  }
+  #sponsors .wrap #tacoBell img {
+    width: 30%;
   }
   footer .legal {
     width: 450px;

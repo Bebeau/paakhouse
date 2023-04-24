@@ -191,7 +191,7 @@ header {
 	nav {
 		background: $teal;
 		box-sizing: border-box;
-		padding: 25px 75px 25px 25px;
+		padding: 50px 75px 50px 25px;
 		transform: translate(0,-300px);
 		transition: all 0.5s ease-in-out;
 		position: relative;
@@ -612,6 +612,9 @@ header {
 }
 #sponsors {
 	background: $black;
+	h3 {
+		color: white;
+	}
 	.wrap {
 		display: flex;
 		flex-wrap: wrap;
@@ -622,19 +625,23 @@ header {
 		a {
 			flex: 0 0 25%;
 			box-sizing: border-box;
-			padding: 25px;
+			padding: 15px;
 			margin: 0 0 0 -3px;
 			opacity: 1;
 			transition: all 0.3s ease-in-out;
 			img {
-				max-width: 100%;
-				min-width: 100%;
-				width: 100%;
+				max-width: 80%;
+				width: auto;
 			}
 			&:hover {
 				cursor: pointer;
 				opacity: 0.8;
 				transition: all 0.3s ease-in-out;
+			}
+		}
+		#tacoBell {
+			img {
+				width: 50%;
 			}
 		}
 	}
@@ -910,8 +917,16 @@ footer {
 		padding-bottom: 40px;
 		.wrap {
 			a {
-				flex: 0 0 10%;
-				padding: 20px;
+				flex: 0 0 20%;
+				padding: 50px 20px;
+				img {
+					width: 50%;
+				}
+			}
+			#tacoBell {
+				img {
+					width: 30%;
+				}
 			}
 		}
 	}
