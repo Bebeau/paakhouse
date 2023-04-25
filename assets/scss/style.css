@@ -385,6 +385,10 @@ header.in nav {
   display: block;
   margin: 0 auto;
 }
+#splash #splashCopy #logo .button {
+  background: white;
+  color: black;
+}
 #splash #splashCopy img {
   max-width: 100%;
 }
@@ -660,7 +664,7 @@ header.in nav {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 0 0 20px;
+  padding: 0 0 60px;
   margin: 0 auto;
 }
 #sponsors .wrap a {
