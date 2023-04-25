@@ -229,9 +229,9 @@ header.show #socialLinks {
   transition: all 0.3s ease-in-out;
 }
 header nav {
-  background: #87e1c0;
+  background: black;
   box-sizing: border-box;
-  padding: 50px 75px 50px 25px;
+  padding: 25px 75px 25px 25px;
   transform: translate(0, -300px);
   transition: all 0.5s ease-in-out;
   position: relative;
@@ -245,10 +245,10 @@ header nav a {
   padding: 0;
   display: block;
   border: none;
+  color: white;
   background: none;
   text-decoration: none;
   text-transform: capitalize;
-  color: #6eb58b;
   line-height: 40px;
   font-family: "montserrat-regular";
   letter-spacing: 1px;
