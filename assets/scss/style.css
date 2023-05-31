@@ -465,34 +465,34 @@ header.in nav {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: 40px;
 }
 #about section #news a {
-  padding: 20px;
+  flex: 0 0 33.3%;
+  display: block;
   box-sizing: border-box;
-}
-#about section #news a#people {
-  flex: 0 0 40%;
-}
-#about section #news a#billboards {
-  flex: 0 0 60%;
-}
-#about section #news a#grammys {
-  flex: 0 0 20%;
-}
-#about section #news a#latimes {
-  flex: 0 0 80%;
-}
-#about section #news a#dailyshow {
-  flex: 0 0 40%;
-}
-#about section #news a#blackenterprise {
-  flex: 0 0 60%;
+  padding: 10px;
 }
 #about section #news a img {
-  width: 100%;
+  max-width: 80%;
+  max-height: 80%;
+}
+#about section #news a#spin img {
+  max-height: 40px;
+}
+#about section #news a#dailyshow img {
+  max-height: 60px;
+}
+#about section #news a#grammys img {
+  max-height: 50px;
+}
+#about section #news a#latimes img, #about section #news a#blackenterprise img {
+  max-width: 100%;
+}
+#about section #news a#latimes {
+  flex: 0 0 50%;
 }
 
 #videos {
@@ -808,28 +808,12 @@ footer .signature a:hover {
   #about section #news {
     max-width: 600px;
     margin: 40px auto 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
-  #about section #news a#people {
-    flex: 0 0 30%;
-  }
-  #about section #news a#billboards {
-    flex: 0 0 40%;
-  }
-  #about section #news a#grammys {
-    flex: 0 0 25%;
-  }
-  #about section #news a#latimes {
-    flex: 0 0 40%;
-  }
-  #about section #news a#dailyshow {
-    flex: 0 0 30%;
-  }
-  #about section #news a#blackenterprise {
-    flex: 0 0 30%;
-  }
-  #about section #news a img {
-    padding: 0 40px;
-    box-sizing: border-box;
+  #about section #news a {
+    padding: 20px;
   }
 }
 @media (min-width: 768px) {
@@ -864,12 +848,6 @@ footer .signature a:hover {
   }
   #about section .stream .button {
     width: 250px;
-  }
-  #about section #news {
-    display: flex;
-  }
-  #about section #news a {
-    padding: 10px;
   }
   #photos .m-scooch {
     height: auto;

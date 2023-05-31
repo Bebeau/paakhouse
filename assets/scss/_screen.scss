@@ -422,34 +422,68 @@ header {
 			display: flex;
 			flex-wrap: wrap;
 			flex-direction: row;
-			justify-content: center;
+			justify-content: space-evenly;
 			align-items: center;
 			margin-top: 40px;
 			a {
-				padding: 20px;
+				flex: 0 0 33.3%;
+				display: block;
 				box-sizing: border-box;
-				&#people {
-					flex: 0 0 40%;
+				padding: 10px;
+				img {
+					max-width: 80%;
+					max-height: 80%;
 				}
-				&#billboards {
-					flex: 0 0 60%;
-				}
-				&#grammys {
-					flex: 0 0 20%;
-				}
-				&#latimes {
-					flex: 0 0 80%;
+				&#spin {
+					img {
+						max-height: 40px;
+					}
 				}
 				&#dailyshow {
-					flex: 0 0 40%;
+					img {
+						max-height: 60px;
+					}
 				}
+				&#grammys {
+					img {
+						max-height: 50px;
+					}
+				}
+				&#latimes,
 				&#blackenterprise {
-					flex: 0 0 60%;
+					img {
+						max-width: 100%;
+					}
 				}
-				img {
-					width: 100%;
+				&#latimes {
+					flex: 0 0 50%;
 				}
 			}
+			// a {
+			// 	padding: 20px;
+			// 	box-sizing: border-box;
+			// 	&#people {
+			// 		flex: 0 0 40%;
+			// 	}
+			// 	&#billboards {
+			// 		flex: 0 0 60%;
+			// 	}
+			// 	&#grammys {
+			// 		flex: 0 0 20%;
+			// 	}
+			// 	&#latimes {
+			// 		flex: 0 0 80%;
+			// 	}
+			// 	&#dailyshow {
+			// 		flex: 0 0 40%;
+			// 	}
+			// 	&#blackenterprise {
+			// 		flex: 0 0 60%;
+			// 	}
+			// 	img {
+			// 		width: 100%;
+			// 	}
+			// }
 		}
 	}
 }
@@ -778,56 +812,68 @@ footer {
 			#news {
 				max-width: 600px;
 				margin: 40px auto 0;
+				display: flex;
+				justify-content: space-evenly;
+				flex-wrap: wrap;
 				a {
-					&#people {
-						flex: 0 0 30%;
-					}
-					&#billboards {
-						flex: 0 0 40%;
-					}
-					&#grammys {
-						flex: 0 0 25%;
-					}
-					&#latimes {
-						flex: 0 0 40%;
-					}
-					&#dailyshow {
-						flex: 0 0 30%;
-					}
-					&#blackenterprise {
-						flex: 0 0 30%;
-					}
-					// &#people {
-					// 	flex: 0 0 20%;
-					// }
-					// &#billboards {
-					// 	flex: 0 0 20%;
-					// }
-					// &#grammys {
-					// 	flex: 0 0 20%;
-					// 	img {
-					// 		max-height: 50px;
-					// 		width: auto;
-					// 	}
-					// }
-					// &#latimes {
-					// 	flex: 0 0 20%;
-					// }
-					// &#dailyshow {
-					// 	flex: 0 0 20%;
-					// 	img {
-					// 		max-height: 50px;
-					// 		width: auto;
-					// 	}
-					// }
-					// &#blackenterprise {
-					// 	flex: 0 0 20%;
-					// }
-					img {
-						padding: 0 40px;
-						box-sizing: border-box;
-					}
+					padding: 20px;
 				}
+				// a {
+				// 	&#forbes {
+				// 		flex: 0 0 30%;
+				// 	}
+				// 	&#spin {
+				// 		flex: 0 0 30%;
+				// 	}
+				// 	&#people {
+				// 		flex: 0 0 30%;
+				// 	}
+				// 	&#billboards {
+				// 		flex: 0 0 40%;
+				// 	}
+				// 	&#grammys {
+				// 		flex: 0 0 25%;
+				// 	}
+				// 	&#latimes {
+				// 		flex: 0 0 50%;
+				// 	}
+				// 	&#dailyshow {
+				// 		flex: 0 0 30%;
+				// 	}
+				// 	&#blackenterprise {
+				// 		flex: 0 0 40%;
+				// 	}
+				// 	// &#people {
+				// 	// 	flex: 0 0 20%;
+				// 	// }
+				// 	// &#billboards {
+				// 	// 	flex: 0 0 20%;
+				// 	// }
+				// 	// &#grammys {
+				// 	// 	flex: 0 0 20%;
+				// 	// 	img {
+				// 	// 		max-height: 50px;
+				// 	// 		width: auto;
+				// 	// 	}
+				// 	// }
+				// 	// &#latimes {
+				// 	// 	flex: 0 0 20%;
+				// 	// }
+				// 	// &#dailyshow {
+				// 	// 	flex: 0 0 20%;
+				// 	// 	img {
+				// 	// 		max-height: 50px;
+				// 	// 		width: auto;
+				// 	// 	}
+				// 	// }
+				// 	// &#blackenterprise {
+				// 	// 	flex: 0 0 20%;
+				// 	// }
+				// 	img {
+				// 		padding: 0 40px;
+				// 		box-sizing: border-box;
+				// 	}
+				// }
 			}
 		}
 	}
@@ -863,12 +909,6 @@ footer {
 			.stream {
 				.button {
 					width: 250px;
-				}
-			}
-			#news {
-				display: flex;
-				a {
-					padding: 10px;
 				}
 			}
 		}
