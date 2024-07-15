@@ -1,0 +1,57 @@
+#videos {
+	text-align: center;
+	color: $tan;
+	background: $red;
+	background-size: 80%;
+	background-position: 50% 50%;
+	padding: 40px 20px;
+	position: relative;
+	z-index: 5;
+	h3 {
+		color: $tan;
+		margin-top: 0;
+		margin-bottom: 20px;
+		display: block;
+	}
+	.nav-arrow {
+		display: none;
+	}
+    .m-scooch-videos {
+        .m-scooch-inner {
+        	h3 {
+        		font-size: 1.2rem;
+        	}
+        }
+        .m-scooch-controls {
+    		margin: 10px 0 0;
+    	}
+    }
+}
+
+@media(min-width: 768px) {
+    #videos {
+		.m-scooch-videos {
+			.m-scooch-inner {
+				h3 {
+					font-size: 2rem;
+				}
+			}
+	        .m-scooch-controls {
+	    		margin: 20px 0 0;
+	    	}
+	    }
+	}
+}
+
+@media (min-width: 853px) {
+	#videos {	
+		iframe,
+		video {
+			width: 853px;
+			height: 505px;
+		}
+		.nav-arrow {
+			display: inherit;
+		}
+	}
+}

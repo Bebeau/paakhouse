@@ -1,0 +1,20 @@
+#photos {
+	background: black;
+	.m-scooch {
+		height: 250px;
+	}
+	.photo {
+		height: 125px;
+	}
+}
+
+@media(min-width: 768px) {
+	#photos {
+		.m-scooch {
+			height: auto;
+		}
+		.photo {
+			height: 50vh;
+		}
+	}
+}

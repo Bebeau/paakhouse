@@ -1,0 +1,149 @@
+#cta {
+	background: $lightGreen;
+	color: $black;
+	padding: 40px;
+	text-align: center;
+	position: relative;
+	z-index: 5;
+	h3 {
+		margin-top: 0;
+        color: $darkGreen;
+	}
+	.or {
+		text-align: center;
+		display: block;
+		margin: 10px auto;
+        color: $darkGreen;
+	}
+	.button {
+		font-size: 12pt;
+		border: none;
+		background: $darkGreen;
+		color: $tan;
+		text-decoration: none;
+		line-height: 60px;
+		height: 60px;
+		vertical-align: top;
+		width: 100%;
+		display: inline-block;
+		font-weight: 800;
+		text-transform: uppercase;
+		margin: 5px;
+		text-align: center;
+		transition: all 0.2s ease-in-out;
+		box-sizing: border-box;
+		padding: 0 10px;
+		&.tell-btn {
+			line-height: normal;
+			padding-top: 12px;
+		}
+		&.donate-btn {
+			letter-spacing: 1px;
+		}
+		&:hover {
+			background: $black;
+			transition: all 0.2s ease-in-out;
+		}
+	}
+	#newsletterFrm {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		input {
+			width: 100%;
+			flex: 0 0 100%;
+			border: 5px solid $darkGreen;
+			background: transparent;
+			color: $black;
+			height: 50px;
+			line-height: 50px;
+			box-sizing: border-box;
+			padding: 0 15px;
+			margin: 0;
+			vertical-align: bottom;
+			font-family: "Secondary" sans-serif;
+			text-transform: uppercase;
+			font-weight: 500;
+			border-radius: 0;
+			&:focus {
+				outline: none;
+			}
+			&::placeholder {
+				color: $black;
+			}
+		}
+		button {
+			flex: 0 0 100%;
+			margin: 0;
+			height: 50px;
+			line-height: 50px;
+			box-sizing: border-box;
+			padding: 0 15px;
+			color: $tan;
+			background: $darkGreen;
+			background-position: 50% 50%;
+			transition: all 0.3s $authenticMotion;
+			letter-spacing: 1px;
+			&:hover {
+				cursor: pointer;
+				background: $black;
+				transition: all 0.2s ease-in-out;
+			}
+			&.success {
+				background: url('../img/check-icon.png') no-repeat scroll center / contain #41ad49;
+				background-size: 25px;
+			}
+			&.error {
+				background: url('../img/block-icon.png') no-repeat scroll center / contain darken($red, 10%);
+				background-size: 35px;
+			}
+		}
+	}
+	.responseMessage {
+		width: 100%;
+		flex: 0 0 100%;
+		margin: 0 auto;
+		box-sizing: border-box;
+		background: $tan;
+		color: $black;
+		font-size: 0.8rem;
+		a {
+			color: black;
+			text-decoration: none;
+		}
+		&.show {
+			padding: 10px;
+		}
+	}
+}
+
+@media(min-width: 768px) {
+	#cta {
+		padding: 60px 0 80px;
+		.button {
+			width: 250px;
+		}
+		.or {
+			margin: 30px auto;
+		}
+		#newsletterFrm {
+			max-width: 515px;
+			margin: 0 auto;
+			flex-direction: row;
+			flex-wrap: wrap;
+			input {
+				flex: 0 0 60%;
+			}
+			button {
+				flex: 0 0 40%;
+			}
+			.responseMessage {
+				flex: 0 0 100%;
+			}
+		}
+	}
+}

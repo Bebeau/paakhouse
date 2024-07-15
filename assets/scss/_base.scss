@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Primary';
+    src: url('../fonts/2024/Thunder-ExtraBoldLCItalic.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Secondary';
+    src: url('../fonts/2024/heavy_dock11.otf') format('opentype');
+}
+
+$tan: #f4dfc5;
+$red: #e1634f;
+$lightGreen: #5d9865;
+$green: #1a3f2c;
+$darkGreen: #12221d;
+$black: #222222;
+
+$authenticMotion: cubic-bezier(.4,0,.2,1);
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Secondary", sans-serif;
+	text-transform: uppercase;
+	height: 100%;
+	&.freeze {
+		overflow: hidden;
+	}
+}
+#privacy {
+	section {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 40px;
+	}
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Primary', sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1.4rem;
+}
+a, button {
+	text-decoration: none;
+	font-family: 'Secondary', sans-serif;
+	&:hover {
+		cursor: pointer;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+@keyframes spinner {
+    0% {
+      transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    }
+    100% {
+      transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+}
+#loading::before {
+    animation: 1.5s linear infinite spinner;
+    animation-play-state: inherit;
+    border: solid 5px $black;
+    border-bottom-color: $red;
+    border-radius: 50%;
+    content: "";
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    will-change: transform;
+}
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999999;
+    background: black;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    &.show {
+        opacity: 0;
+        pointer-events: none;
+        transition: all 1s ease-in-out;
+    }
+}
+  
+
+@media(min-width: 768px) {
+    h3 {
+		font-size: 2rem;
+	}
+    button {
+		width: 250px;
+	}
+}

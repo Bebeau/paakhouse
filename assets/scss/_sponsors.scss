@@ -1,0 +1,56 @@
+#sponsors {
+	background: $darkGreen;
+	h3 {
+		color: white;
+	}
+	.wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding: 0 0 60px;
+		margin: 0 auto;
+		a {
+			flex: 0 0 25%;
+			box-sizing: border-box;
+			padding: 15px;
+			margin: 0 0 0 -3px;
+			opacity: 1;
+			transition: all 0.3s ease-in-out;
+			img {
+				max-width: 80%;
+				width: auto;
+			}
+			&:hover {
+				cursor: pointer;
+				opacity: 0.8;
+				transition: all 0.3s ease-in-out;
+			}
+		}
+		#tacoBell {
+			img {
+				width: 50%;
+			}
+		}
+	}
+}
+
+@media(min-width: 768px) {
+	#sponsors {
+		padding-bottom: 40px;
+		.wrap {
+			a {
+				flex: 0 0 20%;
+				padding: 50px 20px;
+				img {
+					width: 50%;
+				}
+			}
+			#tacoBell {
+				img {
+					width: 30%;
+				}
+			}
+		}
+	}
+}
