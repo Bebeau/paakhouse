@@ -34,6 +34,7 @@
 		transition: all 0.2s ease-in-out;
 		box-sizing: border-box;
 		padding: 0 10px;
+		font-family: 'Secondary', sans-serif;
 		&.tell-btn {
 			line-height: normal;
 			padding-top: 12px;
@@ -66,7 +67,6 @@
 			padding: 0 15px;
 			margin: 0;
 			vertical-align: bottom;
-			font-family: "Secondary" sans-serif;
 			text-transform: uppercase;
 			font-weight: 500;
 			border-radius: 0;
@@ -89,6 +89,7 @@
 			background-position: 50% 50%;
 			transition: all 0.3s $authenticMotion;
 			letter-spacing: 1px;
+			font-family: 'Secondary', sans-serif;
 			&:hover {
 				cursor: pointer;
 				color: white;

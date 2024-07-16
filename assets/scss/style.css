@@ -543,6 +543,7 @@ header.in nav {
   transition: all 0.2s ease-in-out;
   box-sizing: border-box;
   padding: 0 10px;
+  font-family: "Secondary", sans-serif;
 }
 #cta .button.tell-btn {
   line-height: normal;
@@ -576,7 +577,6 @@ header.in nav {
   padding: 0 15px;
   margin: 0;
   vertical-align: bottom;
-  font-family: "Secondary" sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   border-radius: 0;
@@ -599,6 +599,7 @@ header.in nav {
   background-position: 50% 50%;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 1px;
+  font-family: "Secondary", sans-serif;
 }
 #cta #newsletterFrm button:hover {
   cursor: pointer;
@@ -660,7 +661,7 @@ header.in nav {
   background: #12221d;
 }
 #sponsors h3 {
-  color: white;
+  color: #f4dfc5;
 }
 #sponsors .wrap {
   display: flex;
@@ -675,7 +676,7 @@ header.in nav {
   box-sizing: border-box;
   padding: 15px;
   margin: 0 0 0 -3px;
-  opacity: 0.8;
+  opacity: 1;
   transition: all 0.3s ease-in-out;
 }
 #sponsors .wrap a img {
@@ -684,7 +685,6 @@ header.in nav {
 }
 #sponsors .wrap a:hover {
   cursor: pointer;
-  opacity: 1;
   transition: all 0.3s ease-in-out;
 }
 #sponsors .wrap #tacoBell img {
@@ -712,7 +712,7 @@ footer {
   padding: 50px 0;
   line-height: 18px;
   background: #12221d;
-  color: rgba(255, 255, 255, 0.5);
+  color: #f4dfc5;
   overflow: hidden;
   position: relative;
   z-index: 5;
@@ -734,7 +734,7 @@ footer .legal span.fullYear {
   display: initial;
 }
 footer .legal .policy {
-  color: rgba(255, 255, 255, 0.8);
+  color: white;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
@@ -754,7 +754,7 @@ footer .signature span {
 }
 footer .signature a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
+  color: white;
   display: inline-block;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
