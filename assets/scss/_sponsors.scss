@@ -15,7 +15,7 @@
 			box-sizing: border-box;
 			padding: 15px;
 			margin: 0 0 0 -3px;
-			opacity: 1;
+			opacity: 0.8;
 			transition: all 0.3s ease-in-out;
 			img {
 				max-width: 80%;
@@ -23,7 +23,7 @@
 			}
 			&:hover {
 				cursor: pointer;
-				opacity: 0.8;
+				opacity: 1;
 				transition: all 0.3s ease-in-out;
 			}
 		}

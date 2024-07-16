@@ -76,7 +76,11 @@
 		z-index: 2;
 		#logo {
 			position: relative;
-            top: 30px;
+            top: 0;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 			z-index: 4;
 			img {
 				max-width: 60%;
@@ -90,6 +94,8 @@
             p {
                 margin: 5px 0;
                 font-size: 1.4rem;
+                font-family: "Secondary", sans-serif;
+                text-transform: uppercase;
             }
 		}
 	}
