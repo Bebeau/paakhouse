@@ -379,6 +379,9 @@ header.in nav {
   display: block;
   margin: 10px auto 0;
   color: #222222;
+  font-family: "montserrat-regular", sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 #splash #splashCopy #logo p {
   margin: 5px 0;
@@ -558,7 +561,7 @@ header.in nav {
   transition: all 0.2s ease-in-out;
   box-sizing: border-box;
   padding: 0 10px;
-  font-family: "Secondary", sans-serif;
+  font-family: "montserrat-regular", sans-serif;
 }
 #cta .button.tell-btn {
   line-height: normal;
@@ -614,7 +617,7 @@ header.in nav {
   background-position: 50% 50%;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 1px;
-  font-family: "Secondary", sans-serif;
+  font-family: "montserrat-regular", sans-serif;
 }
 #cta #newsletterFrm button:hover {
   cursor: pointer;

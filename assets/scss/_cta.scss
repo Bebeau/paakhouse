@@ -34,7 +34,8 @@
 		transition: all 0.2s ease-in-out;
 		box-sizing: border-box;
 		padding: 0 10px;
-		font-family: 'Secondary', sans-serif;
+		// font-family: 'Secondary', sans-serif;
+		font-family: "montserrat-regular", sans-serif;
 		&.tell-btn {
 			line-height: normal;
 			padding-top: 12px;
@@ -89,7 +90,8 @@
 			background-position: 50% 50%;
 			transition: all 0.3s $authenticMotion;
 			letter-spacing: 1px;
-			font-family: 'Secondary', sans-serif;
+			// font-family: 'Secondary', sans-serif;
+			font-family: "montserrat-regular", sans-serif;
 			&:hover {
 				cursor: pointer;
 				color: white;
