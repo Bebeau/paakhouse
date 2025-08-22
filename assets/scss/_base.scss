@@ -2,7 +2,12 @@
 
 @font-face {
     font-family: 'Primary';
-    src: url('../fonts/2024/Thunder-ExtraBoldLCItalic.otf') format('opentype');
+    src: url('../fonts/2025/windsor-regular.woff2') format('woff2'),
+        url('../fonts/2025/windsor-regular.woff') format('woff'),
+        url('../fonts/2025/windsor-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Secondary';

@@ -83,14 +83,26 @@
             justify-content: center;
 			z-index: 4;
 			img {
-				max-width: 60%;
+				max-width: 100%;
 				display: block;
 				margin: 0 auto;
+				transform: translateX(10%);
 			}
 			h1 {
-                font-size: 2.4rem;
+                font-size: 1.6rem;
                 margin: 0;
+				text-transform: capitalize;
             }
+			.button {
+				width: 200px;
+				background: $tan;
+				height: 50px;
+				line-height: 50px;
+				padding: 0 15px;
+				display: block;
+				margin: 10px auto 0;
+				color: $black;
+			}
             p {
                 margin: 5px 0;
                 font-size: 1.4rem;
@@ -107,7 +119,7 @@
 			#logo {
 				top: 10px;
 				img {
-					max-width: 300px;
+					max-width: 450px;
 					display: block;
 					margin: 0 auto;
 				}

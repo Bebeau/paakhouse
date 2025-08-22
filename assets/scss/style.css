@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500,700i,800,900i&display=swap");
 @font-face {
   font-family: "Primary";
-  src: url("../fonts/2024/Thunder-ExtraBoldLCItalic.otf") format("opentype");
+  src: url("../fonts/2025/windsor-regular.woff2") format("woff2"), url("../fonts/2025/windsor-regular.woff") format("woff"), url("../fonts/2025/windsor-regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Secondary";
@@ -357,13 +360,25 @@ header.in nav {
   z-index: 4;
 }
 #splash #splashCopy #logo img {
-  max-width: 60%;
+  max-width: 100%;
   display: block;
   margin: 0 auto;
+  transform: translateX(10%);
 }
 #splash #splashCopy #logo h1 {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   margin: 0;
+  text-transform: capitalize;
+}
+#splash #splashCopy #logo .button {
+  width: 200px;
+  background: #f4dfc5;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 15px;
+  display: block;
+  margin: 10px auto 0;
+  color: #222222;
 }
 #splash #splashCopy #logo p {
   margin: 5px 0;
@@ -377,7 +392,7 @@ header.in nav {
     top: 10px;
   }
   #splash #splashCopy #logo img {
-    max-width: 300px;
+    max-width: 450px;
     display: block;
     margin: 0 auto;
   }
