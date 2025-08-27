@@ -14,7 +14,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "montserrat-regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
   height: 100%;
 }
 html.freeze,
@@ -29,7 +29,7 @@ body.freeze {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Primary", sans-serif;
+  font-family: "Secondary", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -360,15 +360,16 @@ header.in nav {
   z-index: 4;
 }
 #splash #splashCopy #logo img {
-  max-width: 100%;
+  max-width: 60%;
   display: block;
   margin: 0 auto;
   transform: translateX(10%);
 }
 #splash #splashCopy #logo h1 {
   font-size: 1.6rem;
-  margin: 0;
+  margin: 10px 0 20px;
   text-transform: capitalize;
+  font-family: "Primary", sans-serif;
 }
 #splash #splashCopy #logo .button {
   width: 200px;
@@ -398,6 +399,9 @@ header.in nav {
     max-width: 450px;
     display: block;
     margin: 0 auto;
+  }
+  #splash #splashCopy #logo h1 {
+    margin-top: 0;
   }
 }
 #about {
