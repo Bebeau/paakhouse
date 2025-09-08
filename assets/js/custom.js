@@ -101,21 +101,22 @@ var init = {
 		});
     },
     formSubmit() {
-		jQuery('#newsletterFrm').submit(function(e) {
+		jQuery('#newsletterFrm').off("submit").on("submit", function(e) {
+			e.preventDefault();
+
 			var form = jQuery(this);
 			var button = jQuery('.submit-btn');
+
 			jQuery.ajax({
-				type: "get",
+				type: "GET",
 				url: "https://andersonpaak.us20.list-manage.com/subscribe/post-json?c=?",
 				data: form.serialize(),
-				dataType: 'json',
-				contentType: "application/json; charset=utf-8",
+				dataType: "jsonp",
 				error: function(err) {
 					console.error(err);
-					// alert("Could not connect to the registration server.");
 				},
 				success: function(data) {
-					if (data.result != "success") {
+					if (data.result !== "success") {
 						button.html("").addClass("error");
 						jQuery('.responseMessage').addClass("show").html(data.msg);
 					} else {
@@ -124,17 +125,16 @@ var init = {
 						button.html("").addClass("success");
 						jQuery('.responseMessage').addClass("show").html(data.msg);
 					}
-					setTimeout(
-						function(){
-							jQuery('.responseMessage').removeClass("show").html("");
-							button.removeClass("error success").html("Keep In Touch");
-						}, 3000
-					);
+					setTimeout(function() {
+						jQuery('.responseMessage').removeClass("show").html("");
+						button.removeClass("error success").html("Keep In Touch");
+					}, 3000);
 				}
 			});
+
 			return false;
 		});
-    },
+	},
     photoScale() {
     	jQuery(".photo").click(function(){
     		var direction = jQuery(this).attr("data-scale");

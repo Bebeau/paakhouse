@@ -364,7 +364,7 @@ header.in nav {
   z-index: 4;
 }
 #splash #splashCopy #logo img {
-  max-width: 60%;
+  max-width: 40%;
   display: block;
   margin: 0 auto;
   transform: translateX(10%);
@@ -384,7 +384,7 @@ header.in nav {
   display: block;
   margin: 10px auto 0;
   color: #222222;
-  font-family: "montserrat-regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
   letter-spacing: 1px;
 }
@@ -569,7 +569,7 @@ header.in nav {
   transition: all 0.2s ease-in-out;
   box-sizing: border-box;
   padding: 0 10px;
-  font-family: "montserrat-regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 #cta .button.tell-btn {
   line-height: normal;
@@ -591,14 +591,12 @@ header.in nav {
   justify-content: center;
   align-items: center;
 }
-#cta #newsletterFrm input {
+#cta #newsletterFrm #mce-EMAIL {
   width: 100%;
   flex: 0 0 100%;
   border: 5px solid #12221d;
   background: transparent;
   color: #222222;
-  height: 50px;
-  line-height: 50px;
   box-sizing: border-box;
   padding: 0 15px;
   margin: 0;
@@ -606,11 +604,12 @@ header.in nav {
   text-transform: uppercase;
   font-weight: 500;
   border-radius: 0;
+  padding: 20px 10px;
 }
-#cta #newsletterFrm input:focus {
+#cta #newsletterFrm #mce-EMAIL:focus {
   outline: none;
 }
-#cta #newsletterFrm input::placeholder {
+#cta #newsletterFrm #mce-EMAIL::placeholder {
   color: #222222;
 }
 #cta #newsletterFrm button {
@@ -625,7 +624,7 @@ header.in nav {
   background-position: 50% 50%;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 1px;
-  font-family: "montserrat-regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 #cta #newsletterFrm button:hover {
   cursor: pointer;
