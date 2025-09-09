@@ -109,9 +109,10 @@ var init = {
 
 			jQuery.ajax({
 				type: "GET",
-				url: "https://andersonpaak.us20.list-manage.com/subscribe/post-json?c=?",
+				url: "https://andersonpaak.us20.list-manage.com/subscribe/post-json?u=ba019c6be008d79b7b06e3f50&id=9866411023&c=?",
 				data: form.serialize(),
 				dataType: "jsonp",
+				contentType: "application/json; charset=utf-8",
 				error: function(err) {
 					console.error(err);
 				},
@@ -123,7 +124,7 @@ var init = {
 						fbq('track', 'Lead');
 						jQuery('input').val("");
 						button.html("").addClass("success");
-						jQuery('.responseMessage').addClass("show").html(data.msg);
+						jQuery('.responseMessage').addClass("show").html("🎉 Thanks for subscribing!");
 					}
 					setTimeout(function() {
 						jQuery('.responseMessage').removeClass("show").html("");
