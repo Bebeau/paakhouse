@@ -1199,6 +1199,16 @@ footer #socialLinks a {
   box-sizing: border-box;
   padding: 0 0 40px;
 }
+#faqs .logo {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 40px auto 0;
+}
+#faqs .logo img {
+  width: 100%;
+  height: auto;
+}
 #faqs a {
   color: #12221d;
 }

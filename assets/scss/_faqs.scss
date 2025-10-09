@@ -3,6 +3,16 @@
     color: $darkGreen;
     box-sizing: border-box;
     padding: 0 0 40px;
+    .logo {
+        width: 200px;
+        height: auto;
+        display: block;
+        margin: 40px auto 0;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
     a {
         color: $darkGreen;
         &:hover {
