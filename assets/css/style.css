@@ -1193,5 +1193,33 @@ footer #socialLinks a {
     font-size: 1.5em;
   }
 }
+#faqs {
+  background: #f4dfc5;
+  color: #12221d;
+  box-sizing: border-box;
+  padding: 0 0 40px;
+}
+#faqs a {
+  color: #12221d;
+}
+#faqs a:hover {
+  text-decoration: underline;
+  color: black;
+}
+#faqs .wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20px;
+}
+#faqs .wrap section {
+  margin: 100px 0;
+}
+#faqs .wrap h1 {
+  text-align: center;
+}
+#faqs .wrap h4 {
+  margin: 40px 0 0;
+}
 
 /*# sourceMappingURL=style.css.map */

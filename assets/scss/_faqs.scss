@@ -1,0 +1,28 @@
+#faqs {
+    background: $tan;
+    color: $darkGreen;
+    box-sizing: border-box;
+    padding: 0 0 40px;
+    a {
+        color: $darkGreen;
+        &:hover {
+            text-decoration: underline;
+            color: black;
+        }
+    }
+    .wrap {
+        max-width: 800px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 20px;
+        section {
+            margin: 100px 0;
+        }
+        h1 {
+            text-align: center;
+        }
+        h4 {
+            margin: 40px 0 0;
+        }
+    }
+}
