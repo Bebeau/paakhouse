@@ -28,16 +28,17 @@
 			display: flex;
 			flex-wrap: wrap;
 			flex-direction: row;
-			justify-content: space-evenly;
+			justify-content: space-between;
 			align-items: center;
-			margin-top: 40px;
+			gap: 30px;
+			margin: 40px auto 0;
 			a {
-				flex: 0 0 33.3%;
+				flex: 0 0 calc(33.33% - 30px);
 				display: block;
 				box-sizing: border-box;
-				padding: 10px;
+				padding: 0;
 				img {
-					max-width: 80%;
+					max-width: 100%;
 					max-height: 80%;
 				}
 				&#spin {
@@ -73,13 +74,10 @@
 		section {
 			#news {
 				max-width: 600px;
-				margin: 40px auto 0;
 				display: flex;
 				justify-content: space-evenly;
 				flex-wrap: wrap;
-				a {
-					padding: 20px;
-				}
+				gap: 20px;
 			}
 		}
 	}
@@ -93,6 +91,12 @@
 			.stream {
 				.button {
 					width: 250px;
+				}
+			}
+			#news {
+				gap: 60px;
+				a {
+					flex: 0 0 calc(25% - 60px);
 				}
 			}
 		}

@@ -364,7 +364,7 @@ header.in nav {
   z-index: 4;
 }
 #splash #splashCopy #logo img {
-  max-width: 40%;
+  max-width: 50%;
   display: block;
   margin: 0 auto;
   transform: translateX(10%);
@@ -440,18 +440,19 @@ header.in nav {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
+  gap: 30px;
+  margin: 40px auto 0;
 }
 #about section #news a {
-  flex: 0 0 33.3%;
+  flex: 0 0 calc(33.33% - 30px);
   display: block;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 0;
 }
 #about section #news a img {
-  max-width: 80%;
+  max-width: 100%;
   max-height: 80%;
 }
 #about section #news a#spin img {
@@ -473,13 +474,10 @@ header.in nav {
 @media (min-width: 515px) {
   #about section #news {
     max-width: 600px;
-    margin: 40px auto 0;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-  }
-  #about section #news a {
-    padding: 20px;
+    gap: 20px;
   }
 }
 @media (min-width: 768px) {
@@ -489,6 +487,12 @@ header.in nav {
   }
   #about section .stream .button {
     width: 250px;
+  }
+  #about section #news {
+    gap: 60px;
+  }
+  #about section #news a {
+    flex: 0 0 calc(25% - 60px);
   }
 }
 #videos {
@@ -696,12 +700,11 @@ header.in nav {
   align-items: center;
   padding: 0 0 60px;
   margin: 0 auto;
+  gap: 60px 40px;
 }
 #sponsors .wrap a {
   flex: 0 0 25%;
   box-sizing: border-box;
-  padding: 15px;
-  margin: 0 0 0 -3px;
   opacity: 1;
   transition: all 0.3s ease-in-out;
 }
@@ -716,14 +719,20 @@ header.in nav {
 #sponsors .wrap #tacoBell img {
   width: 50%;
 }
+#sponsors .wrap #fermHouse img,
+#sponsors .wrap #vibeWell img {
+  width: 30%;
+}
 
 @media (min-width: 768px) {
   #sponsors {
     padding-bottom: 40px;
   }
+  #sponsors .wrap {
+    margin-top: 80px;
+  }
   #sponsors .wrap a {
     flex: 0 0 20%;
-    padding: 50px 20px;
   }
   #sponsors .wrap a img {
     width: 50%;

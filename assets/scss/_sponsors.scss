@@ -10,11 +10,10 @@
 		align-items: center;
 		padding: 0 0 60px;
 		margin: 0 auto;
+		gap: 60px 40px;
 		a {
 			flex: 0 0 25%;
 			box-sizing: border-box;
-			padding: 15px;
-			margin: 0 0 0 -3px;
 			opacity: 1;
 			transition: all 0.3s ease-in-out;
 			img {
@@ -31,6 +30,12 @@
 				width: 50%;
 			}
 		}
+		#fermHouse,
+		#vibeWell {
+			img {
+				width: 30%;
+			}
+		}
 	}
 }
 
@@ -38,9 +43,9 @@
 	#sponsors {
 		padding-bottom: 40px;
 		.wrap {
+			margin-top: 80px;
 			a {
 				flex: 0 0 20%;
-				padding: 50px 20px;
 				img {
 					width: 50%;
 				}
