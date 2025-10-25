@@ -28,9 +28,9 @@
 			display: flex;
 			flex-wrap: wrap;
 			flex-direction: row;
-			justify-content: space-between;
+			justify-content: center;
 			align-items: center;
-			gap: 30px;
+			gap: 40px;
 			margin: 40px auto 0;
 			a {
 				flex: 0 0 calc(33.33% - 30px);
@@ -56,14 +56,15 @@
 						max-height: 50px;
 					}
 				}
-				&#latimes,
+				&#latimes {
+					img {
+						max-height: 50px;
+					}
+				}
 				&#blackenterprise {
 					img {
 						max-width: 100%;
 					}
-				}
-				&#latimes {
-					flex: 0 0 50%;
 				}
 			}
 		}
@@ -73,7 +74,6 @@
 	#about {
 		section {
 			#news {
-				max-width: 600px;
 				display: flex;
 				justify-content: space-evenly;
 				flex-wrap: wrap;
@@ -95,6 +95,7 @@
 			}
 			#news {
 				gap: 60px;
+				margin: 80px auto;
 				a {
 					flex: 0 0 calc(25% - 60px);
 				}

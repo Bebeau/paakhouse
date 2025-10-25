@@ -2,6 +2,8 @@
 	background: $darkGreen;
 	h3 {
 		color: $tan;
+		margin: 0 0 40px;
+		line-height: normal;
 	}
 	.wrap {
 		display: flex;
@@ -25,6 +27,11 @@
 				transition: all 0.3s ease-in-out;
 			}
 		}
+		#mattel {
+			img {
+				width: 35%;
+			}
+		}
 		#tacoBell {
 			img {
 				width: 50%;
@@ -43,7 +50,7 @@
 	#sponsors {
 		padding-bottom: 40px;
 		.wrap {
-			margin-top: 80px;
+			margin-top: 60px;
 			a {
 				flex: 0 0 20%;
 				img {

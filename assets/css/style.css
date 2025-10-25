@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2, h3 {
-  font-size: 2.6rem;
+  font-size: 2rem;
 }
 
 a, button {
@@ -93,6 +93,9 @@ a:focus, button:focus {
 @media (min-width: 768px) {
   button {
     width: 250px;
+  }
+  h2, h3 {
+    font-size: 2.6rem;
   }
 }
 header {
@@ -364,7 +367,7 @@ header.in nav {
   z-index: 4;
 }
 #splash #splashCopy #logo img {
-  max-width: 50%;
+  max-width: 55%;
   display: block;
   margin: 0 auto;
   transform: translateX(10%);
@@ -400,7 +403,7 @@ header.in nav {
     top: 10px;
   }
   #splash #splashCopy #logo img {
-    max-width: 450px;
+    max-width: 600px;
     display: block;
     margin: 0 auto;
   }
@@ -440,9 +443,9 @@ header.in nav {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
   margin: 40px auto 0;
 }
 #about section #news a {
@@ -464,16 +467,15 @@ header.in nav {
 #about section #news a#grammys img {
   max-height: 50px;
 }
-#about section #news a#latimes img, #about section #news a#blackenterprise img {
-  max-width: 100%;
+#about section #news a#latimes img {
+  max-height: 50px;
 }
-#about section #news a#latimes {
-  flex: 0 0 50%;
+#about section #news a#blackenterprise img {
+  max-width: 100%;
 }
 
 @media (min-width: 515px) {
   #about section #news {
-    max-width: 600px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -490,6 +492,7 @@ header.in nav {
   }
   #about section #news {
     gap: 60px;
+    margin: 80px auto;
   }
   #about section #news a {
     flex: 0 0 calc(25% - 60px);
@@ -513,9 +516,6 @@ header.in nav {
 }
 #videos .nav-arrow {
   display: none;
-}
-#videos .m-scooch-videos .m-scooch-inner h3 {
-  font-size: 2.6rem;
 }
 #videos .m-scooch-videos .m-scooch-controls {
   margin: 10px 0 0;
@@ -692,6 +692,8 @@ header.in nav {
 }
 #sponsors h3 {
   color: #f4dfc5;
+  margin: 0 0 40px;
+  line-height: normal;
 }
 #sponsors .wrap {
   display: flex;
@@ -716,6 +718,9 @@ header.in nav {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+#sponsors .wrap #mattel img {
+  width: 35%;
+}
 #sponsors .wrap #tacoBell img {
   width: 50%;
 }
@@ -729,7 +734,7 @@ header.in nav {
     padding-bottom: 40px;
   }
   #sponsors .wrap {
-    margin-top: 80px;
+    margin-top: 60px;
   }
   #sponsors .wrap a {
     flex: 0 0 20%;
@@ -744,7 +749,7 @@ header.in nav {
 footer {
   text-align: center;
   font-size: 10pt;
-  padding: 50px 0;
+  padding: 40px 0;
   line-height: 18px;
   background: #12221d;
   color: #f4dfc5;
@@ -833,6 +838,9 @@ footer #socialLinks a {
 }
 
 @media (min-width: 768px) {
+  footer {
+    padding: 40px 0 80px;
+  }
   footer .legal {
     width: 450px;
   }
@@ -940,7 +948,6 @@ footer #socialLinks a {
   display: inline-block;
   vertical-align: top;
   white-space: normal;
-  font-size: 16px;
 }
 .m-scooch .nav-arrow {
   position: absolute;
